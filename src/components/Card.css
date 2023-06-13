@@ -142,6 +142,10 @@
   letter-spacing: 1px;
 } */
 
+.lable {
+  font-family: 'Montserrat', sans-serif; 
+}
+
 .button:hover {
   background: #fdfb92;
 }
