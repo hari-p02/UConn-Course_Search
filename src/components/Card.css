@@ -1,0 +1,173 @@
+.post-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+}
+
+/* .post-card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  height: 300px; 
+} */
+
+
+.course-desc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #E3F2FD;
+  margin-bottom: 4px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: x-small;
+  /* height: 35px;
+  width: 50px; */
+  width: 25%;
+  /* height: 50%; */
+  padding: 5px;
+  border-radius: 50px;
+  /* background-image: linear-gradient(to top left, rgb(43, 180, 226),rgb(53, 154, 180)); */
+  background-color: #E3F2FD;
+  font-weight: bold;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  /* border: 3px solid #73AD21; */
+  margin-bottom: 10px;
+}
+
+.top svg {
+  /* border: 3px solid #73AD21; */
+  width: 20px;
+  height: 20px;
+  /* background: linear-gradient(to bottom, rgb(255, 136, 255),rgb(172, 70, 255)); */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .3s;
+}
+
+.title {
+  font-size: x-large;
+  line-height: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: black;
+  text-decoration: none;
+  transition: all .35s ease-in;
+}
+
+.title:hover {
+  text-decoration: underline blueviolet;
+}
+
+.datetime {
+  font-size: 12px;
+  color: rgb(168 179 207);
+  margin: 10px 0;
+}
+
+/* .image-preview {
+  flex: 1;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #7EB2DD;
+  margin-bottom: 4px;
+  padding: 5px;
+} */
+
+
+
+.course-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9;
+  overflow: hidden;
+  font-size: medium;
+  text-overflow: ellipsis;
+  padding: 0 15px 0 15px;
+}
+
+
+.reddit-btn {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0 5px 0;;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #FFFECB;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.reddit-logo {
+  width: 25px;
+}
+
+/* .lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #5D41DE;
+  letter-spacing: 1px;
+} */
+
+.button:hover {
+  background: #fdfb92;
+}
+
+.button:hover .reddit-logo {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
