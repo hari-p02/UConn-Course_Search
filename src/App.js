@@ -11,7 +11,6 @@ function App() {
         <SearchBar/>
         </div>
     </div>
-    <Card />
    </>
   );
 }
