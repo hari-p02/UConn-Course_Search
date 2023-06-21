@@ -2,11 +2,17 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './SearchBar.css';
 import Card from "./Card.js"
+import Filter from './Filter';
 
 const SearchBar = () => {
   const [inputValue, setInputValue] = useState('');
   const [classes, setClasses] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const Modal = () => {
+    if (!modalOpen) return null;
+    return <Filter />
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevents form submission and page reload
@@ -55,6 +61,8 @@ const SearchBar = () => {
         </button>
     </label>
 </form>
+      <button onClick={() => {setModalOpen(modalOpen ? false : true)}}>Filters</button>
+      <Modal />
       <div className='similar-classes'>
       {loading ? (
         <div className='ldr'>
