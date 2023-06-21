@@ -79,6 +79,7 @@ const SearchBar = () => {
               grading_basis={classItem["grading_basis"]}
               num_credits={classItem["num_credits"]}
               prerequisites={classItem["prerequisites"]}
+              colors={classItem["col"]}
             />
           ))
         )}
