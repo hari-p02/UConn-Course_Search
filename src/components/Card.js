@@ -25,10 +25,12 @@ const Card = ({title,
         </div>
       </div>
       <div className='reddit-btn'>
+        <a href={"https://www.reddit.com/r/UCONN/search/?q=" + title.split(" ")[0] + "%20" + title.split(" ")[1] + "&restrict_sr=1"} rel="noreferrer" target="_blank">
         <button class="button">
           <img className='reddit-logo' src='/images/redditlogo.png' alt='search reddit' />
           <span class="lable">Look at Reddit!</span>
         </button>
+        </a>
       </div>
     </div>
   )

@@ -175,3 +175,7 @@
     transform: rotate(0deg);
   }
 }
+
+.reddit-btn a {
+  text-decoration: none;
+}
