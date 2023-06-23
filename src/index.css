@@ -15,3 +15,17 @@ code {
     monospace;
 }
 
+body.dark-mode {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.post-card.dark-mode {
+  width: 300px;
+  background-color: #212121;;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
