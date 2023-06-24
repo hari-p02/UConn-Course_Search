@@ -59,7 +59,7 @@ function App() {
   return (
    <>
     <div className='nav-control'>
-      <Navbar />
+      <Navbar darkMode={isDarkMode}/>
       <div class="toggleWrapper">
         <input
             type="checkbox"
