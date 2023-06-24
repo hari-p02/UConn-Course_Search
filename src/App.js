@@ -13,12 +13,32 @@ function App() {
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark-mode');
-      // const postCard = document.querySelector('.post-card');
-      // postCard.classList.add('dark-mode');
+      const postCards = document.querySelectorAll('.post-card');
+      postCards.forEach(postCard => {
+        postCard.classList.add('dark-mode');
+      });
+      const titles = document.querySelectorAll('.title');
+      titles.forEach(title => {
+        title.classList.add('dark-mode');
+      });
+      const infos = document.querySelectorAll('.info');
+      infos.forEach(info => {
+        info.classList.add('dark-mode');
+      });
     } else {
       document.body.classList.remove('dark-mode');
-      // const postCard = document.querySelector('.post-card');
-      // postCard.classList.remove('dark-mode');
+      const postCards = document.querySelectorAll('.post-card');
+      postCards.forEach(postCard => {
+        postCard.classList.remove('dark-mode');
+      });
+      const titles = document.querySelectorAll('.title');
+      titles.forEach(title => {
+        title.classList.remove('dark-mode');
+      });
+      const infos = document.querySelectorAll('.info');
+      infos.forEach(info => {
+        info.classList.remove('dark-mode');
+      });
     }
   }, [isDarkMode]);
   
@@ -42,10 +62,10 @@ function App() {
             </span>
             <span class="star star--1"></span>
             <span class="star star--2"></span>
-            <span class="star star--3"></span>
+            {/* <span class="star star--3"></span> */}
             <span class="star star--4"></span>
-            <span class="star star--5"></span>
-            <span class="star star--6"></span>
+            {/* <span class="star star--5"></span> */}
+            {/* <span class="star star--6"></span> */}
         </label>
       </div>
     </div>
