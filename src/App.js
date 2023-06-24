@@ -25,6 +25,13 @@ function App() {
       infos.forEach(info => {
         info.classList.add('dark-mode');
       });
+      const svgs = document.querySelectorAll('svg');
+      svgs.forEach(svg => {
+        svg.classList.add('dark-mode');
+      });
+      const sb = document.querySelector('.form');
+      sb.classList.add('dark-mode');
+      document.querySelector(".form input").style.color = "white";
     } else {
       document.body.classList.remove('dark-mode');
       const postCards = document.querySelectorAll('.post-card');
@@ -39,6 +46,13 @@ function App() {
       infos.forEach(info => {
         info.classList.remove('dark-mode');
       });
+      const svgs = document.querySelectorAll('svg');
+      svgs.forEach(svg => {
+        svg.classList.remove('dark-mode');
+      });
+      const sb = document.querySelector('.form');
+      sb.classList.remove('dark-mode');
+      document.querySelector(".form input").style.color = "black";
     }
   }, [isDarkMode]);
   
@@ -71,7 +85,7 @@ function App() {
     </div>
     <div className='search-content'>
       <div>
-        <SearchBar />
+        <SearchBar darkMode={isDarkMode}/>
         </div>
     </div>
    </>

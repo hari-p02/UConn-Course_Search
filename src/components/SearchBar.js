@@ -4,7 +4,7 @@ import './SearchBar.css';
 import Card from "./Card.js"
 import Filter from './Filter';
 
-const SearchBar = () => {
+const SearchBar = ({darkMode}) => {
   const [inputValue, setInputValue] = useState('');
   const [classes, setClasses] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -80,6 +80,7 @@ const SearchBar = () => {
               num_credits={classItem["num_credits"]}
               prerequisites={classItem["prerequisites"]}
               colors={classItem["col"]}
+              mode={darkMode}
             />
           ))
         )}

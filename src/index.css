@@ -19,7 +19,7 @@ body.dark-mode {
   background-color: #212121;
 }
 
-.post-card.dark-mode {
+/* .post-card.dark-mode {
   width: 300px;
   background-color: #212121;;
   border-radius: 20px;
@@ -39,6 +39,30 @@ body.dark-mode {
     transition: all .35s ease-in;
 }
 
-.info.dark-mode {
-  background-color: white;
+svg.dark-mode {
+  color: white;
+} */
+
+.form.dark-mode {
+  --input-bg: #212121;
+ /*  background of input */
+  --padding: 1.5em;
+  --rotate: 80deg;
+ /*  rotation degree of input*/
+  --gap: 2em;
+  /*  gap of items in input */
+  --icon-change-color: #15A986;
+ /*  when rotating changed icon color */
+  --height: 40px;
+ /*  height */
+  width: 200px;
+  padding-inline-end: 1em;
+ /*  change this for padding in the end of input */
+  background: var(--input-bg);
+  position: relative;
+  border-radius: 25px;
+  width: 90vw;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
