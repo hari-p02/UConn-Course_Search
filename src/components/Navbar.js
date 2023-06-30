@@ -32,7 +32,7 @@ const Navbar = () => {
           </Link>
           <span class="glider"></span>
         </div>
-        <div class="toggleWrapper">
+        {/* <div class="toggleWrapper">
           <input type="checkbox" className="dn" id="dn" />
           <label for="dn" class="toggle">
             <span class="toggle__handler">
@@ -41,13 +41,10 @@ const Navbar = () => {
               <span class="crater crater--3"></span>
             </span>
             <span class="star star--1"></span>
-            <span class="star star--2"></span>
-            {/* <span class="star star--3"></span> */}
+            <span class="star star--2"></span>           
             <span class="star star--4"></span>
-            {/* <span class="star star--5"></span> */}
-            {/* <span class="star star--6"></span> */}
           </label>
-        </div>
+        </div> */}
       </div>
       <main>
         <Outlet />
