@@ -39,7 +39,7 @@ const SearchBar = ({ darkMode }) => {
         <h1>Welcome</h1>
         <p>
           Make a quick search! <i>"Are there any courses about farming"</i> or{" "}
-          <i>"Gimme a few courses about avacados"</i>...
+          <i>"Gimme a few courses about natural language processing"</i>...
         </p>
         <p>
           Search anything up to get relavent courses offered at the Univeristy
